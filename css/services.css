@@ -1,0 +1,586 @@
+/* ===========================
+   SERVICES
+=========================== */
+
+.services{
+
+    padding:120px 8%;
+
+    background:#111;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.section-title span{
+
+    color:#d4af37;
+
+    letter-spacing:4px;
+
+    font-size:.9rem;
+
+}
+
+.section-title h2{
+
+    font-size:2.8rem;
+
+    margin-top:15px;
+
+    max-width:700px;
+
+    margin-inline:auto;
+
+    line-height:1.3;
+
+}
+
+.services-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.service-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+    height:550px;
+
+    cursor:pointer;
+    transition:
+transform .45s cubic-bezier(.22,.61,.36,1),
+box-shadow .45s;
+
+transform-style:preserve-3d;
+
+will-change:transform;
+
+}
+
+.service-card img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.7s;
+
+}
+
+.service-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+
+        to top,
+
+        rgba(0,0,0,.9),
+
+        rgba(0,0,0,.2)
+
+    );
+
+    transition:.5s;
+
+}
+
+.service-content{
+
+    position:absolute;
+
+    bottom:35px;
+
+    left:35px;
+
+    z-index:10;
+
+}
+
+.service-content h3{
+
+    font-size:2rem;
+
+    margin-bottom:12px;
+
+}
+
+.service-content p{
+
+    color:#d9d9d9;
+
+    margin-bottom:22px;
+
+}
+
+.service-content a{
+
+    color:#d4af37;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.service-card:hover img{
+
+    transform:scale(1.1);
+
+}
+
+.service-card:hover{
+
+transform:
+
+translateY(-12px)
+
+scale(1.02);
+
+box-shadow:
+
+0 35px 70px rgba(0,0,0,.45);
+
+}
+
+.service-card:hover .service-overlay{
+
+    background:linear-gradient(
+
+        to top,
+
+        rgba(0,0,0,.95),
+
+        rgba(0,0,0,.05)
+
+    );
+
+}
+
+.service-card:hover a{
+
+    letter-spacing:2px;
+
+}
+/* ==========================================
+            SERVICES PAGE
+========================================== */
+
+.page-hero{
+
+    min-height:65vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:140px 8%;
+
+    background:linear-gradient(180deg,#0e0e0e,#111);
+
+}
+
+.page-hero-content{
+
+    max-width:900px;
+
+}
+
+.page-hero span{
+
+    color:var(--primary);
+
+    letter-spacing:4px;
+
+}
+
+.page-hero h1{
+
+    font-size:4rem;
+
+    margin:25px 0;
+
+    line-height:1.15;
+
+}
+
+.page-hero p{
+
+    color:var(--text-light);
+
+    line-height:1.9;
+
+    font-size:1.15rem;
+
+}
+/* ==========================================
+            SERVICES GRID
+========================================== */
+
+.services-page{
+
+    padding:120px 8%;
+
+    background:#111;
+
+}
+
+.services-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+}
+
+.service-box{
+
+    background:#181818;
+
+    border-radius:22px;
+
+    padding:45px;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    transition:.35s;
+
+}
+
+.service-box:hover{
+
+    transform:translateY(-10px);
+
+    border-color:rgba(212,175,55,.35);
+
+}
+
+.service-box h2{
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+}
+
+.service-box p{
+
+    color:var(--text-light);
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+.service-box ul{
+
+    list-style:none;
+
+}
+
+.service-box li{
+
+    margin-bottom:14px;
+
+    color:#ddd;
+
+}
+/* ==========================================
+        DETAILED SERVICES
+========================================== */
+
+.services-detail{
+
+    padding:120px 8%;
+
+    background:#0e0e0e;
+
+}
+
+.detail-grid{
+
+    margin-top:70px;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+}
+
+.detail-card{
+
+    background:#181818;
+
+    padding:45px;
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,.06);
+
+    transition:.35s;
+
+}
+
+.detail-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:rgba(212,175,55,.35);
+
+}
+
+.detail-card h3{
+
+    margin-bottom:18px;
+
+    color:var(--primary);
+
+}
+
+.detail-card p{
+
+    color:var(--text-light);
+
+    line-height:1.8;
+
+}
+/* ==========================================
+            WORKFLOW
+========================================== */
+
+.workflow{
+
+    padding:120px 8%;
+
+    background:#111;
+
+}
+
+.workflow-grid{
+
+    margin-top:70px;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+.workflow-step{
+
+    background:#181818;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+}
+
+.step-no{
+
+    width:60px;
+
+    height:60px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    color:#111;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+}
+
+.workflow-step h3{
+
+    margin-bottom:15px;
+
+}
+
+.workflow-step p{
+
+    color:var(--text-light);
+
+    line-height:1.8;
+
+}
+/* ==========================================
+                PACKAGES
+========================================== */
+
+.packages{
+
+    padding:120px 8%;
+
+    background:#0e0e0e;
+
+}
+
+.packages-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+    margin-top:70px;
+
+}
+
+.package-card{
+
+    background:#181818;
+
+    padding:45px;
+
+    border-radius:22px;
+
+    border:1px solid rgba(255,255,255,.06);
+
+    transition:.35s;
+
+    text-align:center;
+
+}
+
+.package-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:rgba(212,175,55,.4);
+
+}
+
+.package-card.featured{
+
+    border:2px solid var(--primary);
+
+}
+
+.package-card h3{
+
+    color:var(--primary);
+
+    margin-bottom:25px;
+
+}
+
+.package-card ul{
+
+    list-style:none;
+
+    margin-bottom:35px;
+
+}
+
+.package-card li{
+
+    margin:15px 0;
+
+    color:var(--text-light);
+
+}
+
+.package-card .primary-btn{
+
+    width:100%;
+
+}
+/* ==========================================
+            WHY SERVICES
+========================================== */
+
+.why-services{
+
+    padding:120px 8%;
+
+    background:#111;
+
+}
+
+.why-grid{
+
+    margin-top:70px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.why-item{
+
+    background:#181818;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+}
+
+.why-item h3{
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+}
+
+.why-item p{
+
+    color:var(--text-light);
+
+    line-height:1.8;
+
+}

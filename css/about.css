@@ -1,0 +1,424 @@
+/* ==========================================
+                ABOUT PAGE
+========================================== */
+
+.page-hero{
+
+    min-height:65vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:140px 8% 100px;
+
+    background:linear-gradient(
+        180deg,
+        #0e0e0e,
+        #111
+    );
+
+}
+
+.page-hero-content{
+
+    max-width:900px;
+
+}
+
+.page-hero span{
+
+    color:var(--primary);
+
+    letter-spacing:4px;
+
+}
+
+.page-hero h1{
+
+    font-size:4rem;
+
+    margin:25px 0;
+
+    line-height:1.15;
+
+}
+
+.page-hero p{
+
+    color:var(--text-light);
+
+    font-size:1.15rem;
+
+    line-height:1.9;
+
+}
+/* ==========================================
+                STORY
+========================================== */
+
+.story{
+
+    padding:120px 8%;
+
+    background:#111;
+
+}
+
+.story-container{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+.story-image{
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+}
+
+.story-image img{
+
+    width:100%;
+
+    display:block;
+
+    transition:.6s;
+
+}
+
+.story-image:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.story-content span{
+
+    color:var(--primary);
+
+    letter-spacing:4px;
+
+}
+
+.story-content h2{
+
+    margin:20px 0 30px;
+
+    font-size:2.8rem;
+
+    line-height:1.2;
+
+}
+
+.story-content p{
+
+    color:var(--text-light);
+
+    line-height:1.9;
+
+    margin-bottom:24px;
+
+}
+/* ==========================================
+                VALUES
+========================================== */
+
+.values{
+
+    padding:120px 8%;
+
+    background:#111;
+
+}
+
+.values-grid{
+
+    margin-top:70px;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+}
+
+.value-card{
+
+    background:#181818;
+
+    border:1px solid rgba(255,255,255,.06);
+
+    border-radius:22px;
+
+    padding:45px;
+
+    transition:.35s ease;
+
+}
+
+.value-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:rgba(212,175,55,.4);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.3);
+
+}
+
+.value-icon{
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:50%;
+
+    background:rgba(212,175,55,.12);
+
+    color:var(--primary);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:1.6rem;
+
+    margin-bottom:25px;
+
+}
+
+.value-card h3{
+
+    margin-bottom:18px;
+
+    font-size:1.5rem;
+
+}
+
+.value-card p{
+
+    color:var(--text-light);
+
+    line-height:1.8;
+
+}
+/* ==========================================
+            EQUIPMENT
+========================================== */
+
+.equipment{
+
+    padding:120px 8%;
+
+    background:#0e0e0e;
+
+}
+
+.equipment-grid{
+
+    margin-top:70px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+.equipment-item{
+
+    background:#171717;
+
+    padding:35px;
+
+    text-align:center;
+
+    border-radius:18px;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    transition:.3s;
+
+}
+
+.equipment-item:hover{
+
+    border-color:rgba(212,175,55,.35);
+
+    transform:translateY(-6px);
+
+}
+/* ==========================================
+            BEHIND THE SCENES
+========================================== */
+
+.bts{
+
+    padding:120px 8%;
+
+    background:#111;
+
+}
+
+.bts-grid{
+
+    margin-top:70px;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    grid-auto-rows:280px;
+
+    gap:25px;
+
+}
+
+.bts-item{
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+    position:relative;
+
+}
+
+.bts-item.large{
+
+    grid-row:span 2;
+
+}
+
+.bts-item.wide{
+
+    grid-column:span 2;
+
+}
+
+.bts-item img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:transform .5s ease;
+
+}
+
+.bts-item:hover img{
+
+    transform:scale(1.08);
+
+}
+/* ==========================================
+                FAQ
+========================================== */
+
+.faq{
+
+    padding:120px 8%;
+
+    background:#0e0e0e;
+
+}
+
+.faq-container{
+
+    max-width:900px;
+
+    margin:70px auto 0;
+
+}
+
+.faq-item{
+
+    margin-bottom:20px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+}
+
+.faq-question{
+
+    width:100%;
+
+    background:#171717;
+
+    color:white;
+
+    border:none;
+
+    padding:25px 30px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    font-size:1.1rem;
+
+}
+
+.faq-question span{
+
+    color:var(--primary);
+
+    font-size:1.5rem;
+
+}
+
+.faq-answer{
+
+    max-height:0;
+
+    overflow:hidden;
+
+    transition:max-height .35s ease;
+
+    background:#111;
+
+}
+
+.faq-answer p{
+
+    padding:25px 30px;
+
+    color:var(--text-light);
+
+    line-height:1.8;
+
+}
+
+.faq-item.active .faq-answer{
+
+    max-height:220px;
+
+}

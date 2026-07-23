@@ -1,0 +1,77 @@
+/* ==========================================
+                CUSTOM CURSOR
+========================================== */
+
+@media (pointer: fine){
+
+    body{
+
+        cursor:none;
+
+    }
+
+    a,
+    button,
+    .service-card,
+    .portfolio-item{
+
+        cursor:none;
+
+    }
+
+    .cursor-dot{
+
+        position:fixed;
+
+        width:8px;
+
+        height:8px;
+
+        background:var(--primary);
+
+        border-radius:50%;
+
+        pointer-events:none;
+
+        z-index:99999;
+
+        transform:translate(-50%,-50%);
+
+    }
+
+    .cursor-ring{
+
+        position:fixed;
+
+        width:38px;
+
+        height:38px;
+
+        border:2px solid var(--primary);
+
+        border-radius:50%;
+
+        pointer-events:none;
+
+        z-index:99998;
+
+        transform:translate(-50%,-50%);
+
+        transition:
+        width .25s,
+        height .25s,
+        border-color .25s;
+
+    }
+
+    .cursor-hover{
+
+        width:60px;
+
+        height:60px;
+
+        border-color:white;
+
+    }
+
+}
